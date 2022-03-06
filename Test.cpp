@@ -63,5 +63,7 @@ TEST_CASE("Bad inputs") {
     CHECK_THROWS(mat(-1, 9, '$', ')'));
     CHECK_THROWS(mat(9, -7, '-', '*'));
     CHECK_THROWS(mat(2, 2, '!', '$'));
+    CHECK_THROWS(mat(3, 7, ' ', '@'));
+    CHECK_THROWS(mat(-1, -3, '%', '$'));
 }
 
